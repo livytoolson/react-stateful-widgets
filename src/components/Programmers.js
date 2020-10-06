@@ -39,7 +39,7 @@ export default function Programmers() {
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
     programmer.filter(dev => {
-      return (programmer == featured) ? dev.name : ' ';
+      featured === dev.id ? dev.name : ' ';
     })
   };
 
